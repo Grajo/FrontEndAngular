@@ -1,0 +1,2 @@
+create a new dockerfile
+using powershell:  new-item dockerfile -ItemType file
