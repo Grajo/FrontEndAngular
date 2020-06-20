@@ -1,1 +1,52 @@
 <p>calculator text change!</p>
+<div class="container">
+    <div class="header">
+      <h2>
+            Calculator component
+        </h2> 
+    </div>
+ 
+    <div class="grid">
+        <div class="row">
+            <div class="col-6">
+                <div class="operation">
+                    <div class="row">
+                        <div class="col-12">
+                            <label>Amount: </label>
+                            <input [(ngModel)]="amount" type="number" name="" placeholder="number">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label>Tax(%): </label>
+                            <input [(ngModel)]="tax" type="number" name="" placeholder="number">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-12">
+                            <br>
+                            <button class="button" (click)="calculate()">
+                                Calculate 
+                            </button>
+                            <button class="button" (click)="reset()">
+                                Reset 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" *ngIf="showResult">
+                <div class="result">
+                    <br>
+                    <span>
+                        <span>
+                            Amount : {{amount}} <br>
+                            Tax : {{tax}} <br>
+                            Result : {{result}}
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
