@@ -4,7 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CalculatorComponent } from './Components/Calculator/calculator/calculator.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CalculatorComponent } from './features/components/calculator/calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CalculatorComponent } from './Components/Calculator/calculator/calculat
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule
   ],
