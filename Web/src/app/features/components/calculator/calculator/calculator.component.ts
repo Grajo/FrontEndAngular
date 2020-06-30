@@ -30,6 +30,13 @@ export class CalculatorComponent implements OnInit {
       },
       error => { console.log('Error retrieving API data: ', error.message); }
     );
+    // this.calculatorService.getCalculation(this.amount, this.tax).subscribe(
+    //   data => {
+    //     this.calculationDetails = data;
+    //     this.showResult = true;
+    //   },
+    //   error => { console.log('Error retrieving API data: ', error.message); }
+    // );
   }
 
   reset() {
